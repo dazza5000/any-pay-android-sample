@@ -165,7 +165,7 @@ class ProPayActivity : Activity() {
                 }
 
                 override fun onTransactionFailed(reason: MeaningfulError) {
-                    addText("Capture Failed " + reason.message)
+                    addText("Capture Failed " + reason)
                 }
             })
         })
@@ -239,7 +239,7 @@ class ProPayActivity : Activity() {
             override fun onCardReaderEvent(event: MeaningfulMessage) {
                 addText("""
 
-    ------>onCardReaderEvent: ${event.message}
+    ------>onCardReaderEvent: $event
     """.trimIndent())
             }
 
@@ -275,10 +275,10 @@ class ProPayActivity : Activity() {
         }
         transaction.execute(object : CardTransactionListener {
             override fun onCardReaderEvent(event: MeaningfulMessage) {
-                addText("""
-
-    ------>onCardReaderEvent: ${event.message}
-    """.trimIndent())
+                addText(("""
+        
+            ------>onCardReaderEvent: """ + event + """
+            """).trimIndent())
             }
 
             override fun onTransactionCompleted() {

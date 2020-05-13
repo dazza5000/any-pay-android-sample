@@ -266,7 +266,7 @@ class MainActivity : Activity() {
             override fun onCardReaderEvent(event: MeaningfulMessage) {
                 addText("""
 
-    ------>onCardReaderEvent: ${event.message}
+    ------>onCardReaderEvent: $event
     """.trimIndent())
             }
 
