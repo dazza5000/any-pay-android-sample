@@ -2,14 +2,13 @@ package com.anywherecommerce.android.sdk.sampleapp;
 
 import android.app.Activity;
 import android.bluetooth.BluetoothDevice;
-import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.anywherecommerce.android.sdk.AppBackgroundingManager;
@@ -21,10 +20,8 @@ import com.anywherecommerce.android.sdk.Logger;
 import com.anywherecommerce.android.sdk.MeaningfulError;
 import com.anywherecommerce.android.sdk.MeaningfulErrorListener;
 import com.anywherecommerce.android.sdk.MeaningfulMessage;
-import com.anywherecommerce.android.sdk.RequestListener;
 import com.anywherecommerce.android.sdk.SDKManager;
 import com.anywherecommerce.android.sdk.Terminal;
-import com.anywherecommerce.android.sdk.component.SignatureView;
 import com.anywherecommerce.android.sdk.devices.CardReader;
 import com.anywherecommerce.android.sdk.devices.CardReaderController;
 import com.anywherecommerce.android.sdk.devices.MultipleBluetoothDevicesFoundListener;
@@ -33,9 +30,7 @@ import com.anywherecommerce.android.sdk.devices.bbpos.BBPOSDeviceCardReaderContr
 import com.anywherecommerce.android.sdk.endpoints.AnyPayTransaction;
 import com.anywherecommerce.android.sdk.endpoints.prioritypayments.PriorityPaymentsEndpoint;
 import com.anywherecommerce.android.sdk.endpoints.prioritypayments.PriorityPaymentsGatewayResponse;
-import com.anywherecommerce.android.sdk.endpoints.propay.PropayEndpoint;
 import com.anywherecommerce.android.sdk.models.TransactionType;
-import com.anywherecommerce.android.sdk.transactions.CardTransaction;
 import com.anywherecommerce.android.sdk.transactions.Transaction;
 import com.anywherecommerce.android.sdk.transactions.listener.CardTransactionListener;
 import com.anywherecommerce.android.sdk.transactions.listener.TransactionListener;

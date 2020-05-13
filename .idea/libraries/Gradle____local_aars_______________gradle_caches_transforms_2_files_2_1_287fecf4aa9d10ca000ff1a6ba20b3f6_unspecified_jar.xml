@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: __local_aars__:./../../../.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6:unspecified@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/libs/coresdk_1_4_7.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/libs/commons-validator-1.3.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/libs/bbdevice-android-3.6.1.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/libs/bbdeviceotaapi-android-1.5.3.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/libs/bbposdevice_1_4_2-mod.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/287fecf4aa9d10ca000ff1a6ba20b3f6/jars/libs/readerapi-android-3.0.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
