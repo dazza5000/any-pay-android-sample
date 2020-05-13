@@ -1,0 +1,104 @@
+{
+  "type": "WorldnetTerminal",
+  "endpoint": {
+    "type": "WorldnetEndpoint",
+    "url" :  "https://payments.anywherecommerce.com/merchant/"
+  },
+  "configuration": {
+    "type": "TerminalConfiguration",
+    "id": "default",
+    "version": "default",
+    "timestamp": "2018-01-01",
+    "enforce": "true",
+
+    "terminalEnabled": "true",
+
+    "taxEnabled": "true",
+    "taxEnabledEditable": "true",
+    "taxRatesEditable": "true",
+    "taxRates": "true",
+
+    "tipEnabled": "true",
+    "tipEnabledEditable": "true",
+    "tipOptionsEditable": "true",
+    "tipOptions": "true",
+
+    "feesEnabled": "true",
+    "feesEnabledEditable": "true",
+    "feesEditable": "true",
+    "fees": "true",
+
+    "defaultCardReader": "Walker C2X",
+    "defaultCardReaderEditable": "true",
+    "enableFirmwareUpdate": "false",
+    "enforceFirmwareCompliance": "false",
+    "minimumFirmwareCompliantVersions": [ {} ], // Enforced Per reader
+    "specificFirmwareCompliantVersions": [ {} ], // Enforced Per reader
+
+    "supportedEntryModes": "SWIPE INSERT TAP PINPAD", // Minimum
+    "enabledEntryModes": "SWIPE INSERT TAP PINPAD",
+    "enabledEntryModesEditable": "false",
+
+    "supportedPaymentMethods": "CREDIT DEBIT CHEQUE",
+    "enabledPaymentMethods": "CREDIT DEBIT",
+    "enabledPaymentMethodsEditable": "false",
+
+    "suspendAndResumeEnabled": "false",
+    "suspendAndResumeEnabledEditable": "false",
+    "suspendAndResumeSupportedPaymentMethods": "CREDIT",
+    "suspendAndResumeSupportedEntryModes": "SWIPE PINPAD",
+
+    "sessionTimeoutInterval": "30",
+    "sessionTimeoutEnabled": "false",
+    "sessionTimeoutEnabledEditable": "true",
+
+    "allowReferencedRefunds": "true",
+    "allowUnreferencedRefunds": "true",
+    "allowPartialRefunds": "true",
+
+    "allowPartialAuthorizations": "true",
+
+    // Card transactions
+    "requireCardPresentRefunds": "false",
+    "requireCardPresentSales": "false",
+    "verifyCardPresentForKeyedTransactions": "false",
+
+    "supportedReceiptOptions": "Default",
+    "enabledReceiptOptions": "Default",
+    "enabledReceiptOptionsEditable": "false",
+
+    "defaultCurrency": "USD",
+    "supportedCurrencies": "ALL",
+    "enabledCurrency": "USD",
+    "enabledCurrencyEditable": "false",
+
+    "chequeColorFormat": "Color",
+    "chequeColorFormatEditable": "true",
+    "chequeFileFormat": "PNG",
+    "chequeFileFormatEditable": "true",
+
+    "driversLicenseRequired": "false",
+    "driversLicenseRequiredEditable": "false",
+    "driversLicenseStateRequired": "false",
+    "driversLicenseStateRequiredEditable": "false",
+
+    "userAuthenticationMode": "DEFER_UNTIL_REQUIRED",
+    "customFieldsEnabled": "false",
+    "customFieldsEnabledEditable": "false",
+    "geolocationEnabled": "true",
+    "geolocationEnabledEditable": "false",
+    "geofencingEnabled": "false",
+    "geofencingEnabledEditable": "false",
+
+    "transactionReportingMode": "ALL_USERS",
+    "transactionReportingModeEditable": "true",
+
+    "enableForgotPasswordUrl": "false",
+    "forgotPasswordUrl": "https://payments.anywherecommerce.com/merchant/selfcare",
+    "requireTermsAndConditions": "false",
+    "termsAndConditionsUrl": "",
+
+    "mainviewBottomBanner": "x"
+  }
+
+}

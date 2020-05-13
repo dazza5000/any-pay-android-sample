@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+  id="animation_sample" oneshot="false">
+	<item android:drawable="@drawable/swipe1" android:duration="125" />
+	<item android:drawable="@drawable/swipe2" android:duration="125" />
+	<item android:drawable="@drawable/swipe3" android:duration="125" />
+	<item android:drawable="@drawable/swipe4" android:duration="125" />
+	<item android:drawable="@drawable/swipe5" android:duration="125" />
+	<item android:drawable="@drawable/swipe6" android:duration="125" />
+	<item android:drawable="@drawable/swipe7" android:duration="125" />
+	<item android:drawable="@drawable/swipe8" android:duration="500" />
+</animation-list>

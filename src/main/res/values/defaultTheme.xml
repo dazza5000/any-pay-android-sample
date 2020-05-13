@@ -1,0 +1,26 @@
+
+    <resources>
+
+        <color name="backgroundColor">#F4F7FD</color>
+        <color name="textColor">#000000</color>
+        <color name="accentColor">#EA1D3A</color>
+        <color name="buttonColor">#65BFC0</color>
+        <color name="buttonColorPressed">#347d7f</color>
+        <color name="buttonTextColor">#FFFFFF</color>
+        <color name="textBoxBackgroundColor">#FFFFFF</color>
+        <color name="textBoxTextColor">#111111</color>
+        <color name="textBoxLabelBoxColor">#65BFC0</color>
+        <color name="accentPanelColor">#FFFFFF</color>
+        <color name="accentPanelTextColor">#111111</color>
+        <color name="subtleTextColor">#E5E5E5</color>
+        <color name="buttonColorDisabled">#8B8378</color>
+
+        <color name="partiallyRefundedTransactionColor">#9ACD32</color>
+        <color name="refundedTransactionColor">#FF7256</color>
+        <color name="voidedTransactionColor">#8B8378</color>
+        <color name="completedTransactionColor">#9ACD32</color>
+        <color name="incompleteTransactionColor">#8B8378</color>
+        <color name="pendingTransactionColor">#EEE685</color>
+        <color name="buttonColor2">#57ffffff</color>
+
+    </resources>

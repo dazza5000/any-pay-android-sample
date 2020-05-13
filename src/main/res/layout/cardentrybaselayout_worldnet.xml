@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/cardentry_fragment_placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+    <!--
+        <fragment android:name="com.BrandPay.Core.ui.fragments.cardentry.CardEntryKeyedUIFragment"
+            android:id="@+id/cardentry_keyed_layout_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment android:name="com.BrandPay.Core.ui.fragments.cardentry.CardEntryChipAndPinUIFragment"
+            android:id="@+id/cardentry_chip_and_pin_layout_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment android:name="com.BrandPay.Core.ui.fragments.cardentry.CardEntryChipAndSignUIFragment"
+            android:id="@+id/cardentry_chip_and_sign_layout_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment android:name="com.BrandPay.Core.ui.fragments.cardentry.CardEntrySwipeAndPINUIFragment"
+            android:id="@+id/cardentry_swipe_and_pin_layout_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <fragment android:name="com.BrandPay.Core.ui.fragments.cardentry.CardEntrySwipeAndSignUIFragment"
+            android:id="@+id/cardentry_swipe_and_sign_layout_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        -->
+
+</LinearLayout>

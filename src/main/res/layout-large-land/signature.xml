@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="5dp"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="60"
+                android:gravity="center_horizontal|bottom"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="$50.00"
+                android:textColor="@color/textEntry"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:typeface="sans"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/signatureTileTip"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/imageCapturedCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+		            android:layout_alignLeft="@id/layoutTipText"
+		            android:layout_alignRight="@id/layoutTipText"
+    		        android:layout_alignTop="@id/layoutTipText"
+        		    android:layout_alignBottom="@id/layoutTipText"
+                    android:contentDescription="CapturedCheckImage"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/sample_cheque"
+                    tools:ignore="HardcodedText" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txtAfterSigned"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/afteryouSigned"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="16sp"
+                android:typeface="sans"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSignature"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@null" >
+
+        <TextView
+            android:id="@+id/txtSignPrompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="5dp"
+            android:text="@string/SignBelowMSG"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:typeface="sans" />
+
+        <com.anywherecommerce.android.sdk.sampleapp.utils.CanvasView
+            android:id="@+id/customSignatureView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/border"
+            android:gravity="center" />
+
+        <com.BrandPay.Core.ui.components.CustomSignatureViewView
+            android:id="@+id/customSignatureView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:background="@null"
+            android:gravity="center" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:background="@drawable/button_continue"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/DONE"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Button
+            android:id="@+id/buttonClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:background="@drawable/button_continue"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/Clear"
+            android:textColor="@color/white"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

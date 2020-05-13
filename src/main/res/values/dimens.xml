@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title">20sp</dimen>
+    <dimen name="header_text_size">24sp</dimen>
+    <dimen name="keypad">24sp</dimen>
+    <dimen name="entry_layout_top_margin">10dp</dimen>
+    <dimen name="entry_layout_bottom_margin">10dp</dimen>
+    <dimen name="entry_layout_left_margin">30dp</dimen>
+    <dimen name="entry_layout_right_margin">30dp</dimen>
+    <dimen name="dollar_textsize">28sp</dimen>
+    <dimen name="dollar_button_padding">16dp</dimen>
+    <dimen name="tax_layout_bottom_margin">10dp</dimen>
+    <dimen name="tax_layout_text_size">24sp</dimen>
+    <dimen name="tax_button_padding">15dp</dimen>
+    <dimen name="spinner_height">49dp</dimen>
+    <dimen name="add_button_padding">16dp</dimen>
+
+
+
+    <dimen name="dialog_title">32sp</dimen>
+    <dimen name="button_left_margin">20dp</dimen>
+    <dimen name="button_right_margin">20dp</dimen>
+    <dimen name="tax_amount_textsize">36sp</dimen>
+    <dimen name="text_entry_horizontal_margin">30dp</dimen>
+    <dimen name="tax_usd_textsize">30sp</dimen>
+
+    <dimen name="home_logo_height">150dp</dimen>
+    <dimen name="top_bar_textsize">24sp</dimen>
+    <dimen name="sale_continue_padding">14dp</dimen>
+    <dimen name="sale_continue_textsize">18sp</dimen>
+    <dimen name="keyboard_top_margin">0dp</dimen>
+    <dimen name="sale_entry_layout_top_margin">20dp</dimen>
+    <dimen name="sale_continue_margin">10dp</dimen>
+    <dimen name="tax_rate_textsize">20sp</dimen>
+    <dimen name="tip_dialog_height">90dp</dimen>
+    <dimen name="tip_dialog_textsize">60sp</dimen>
+    <dimen name="summary_detail_small_top_margin">5dp</dimen>
+    <dimen name="summary_detail_top_margin">10dp</dimen>
+    <dimen name="summary_detail_large_top_margin">20dp</dimen>
+    <dimen name="add_tax_title_textsize">24sp</dimen>
+    <dimen name="add_tax_add_textsize">16sp</dimen>
+    <dimen name="add_tax_textsize">28sp</dimen>
+</resources>

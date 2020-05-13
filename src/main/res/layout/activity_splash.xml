@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentLinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/backgroundsplash">
+
+        <ImageView
+            android:id="@+id/splashLogo"
+            android:layout_width="312.5dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="40dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="logo"
+            android:src="@drawable/logo_white"
+            android:scaleType="fitXY"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/textViewVersionnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/splashLogo"
+            android:layout_centerHorizontal="true"
+            android:text="Version 9.99"
+            android:textColor="@color/splash_text"
+            android:textSize="24sp" />
+
+
+
+        <TextView
+            android:id="@+id/textPoweredBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:text="@string/poweredBy"
+            android:textColor="@color/splash_text"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
