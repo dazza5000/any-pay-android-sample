@@ -25,7 +25,7 @@ import com.bbpos.bbdevice.BBDeviceController
 
 class ProPayActivity : Activity() {
     var txtPanel: TextView? = null
-    var txtReferenceId: EditText? = null
+//    var txtReferenceId: EditText? = null
     var btUSBConnect: Button? = null
     var btnConnectAudio: Button? = null
     var btnDisconnectAudio: Button? = null
@@ -41,9 +41,9 @@ class ProPayActivity : Activity() {
     var emvAuth: Button? = null
     var dialogs = DialogManager()
     var refTransaction: Transaction? = null
-    var endpoint: Endpoint? = null
+    var endpoint: PropayEndpoint? = PropayEndpoint()
     var propaySessionID: String? = null
-    override fun onCreate(savedInstanceState: Bundle) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_pro_pay)
         if (!PermissionsController.verifyAppPermissions(this)) {
@@ -51,7 +51,7 @@ class ProPayActivity : Activity() {
         }
         Logger.i("SDK Version - " + SDKManager.getSdkVersion())
         Terminal.initialize()
-        endpoint = Terminal.getInstance().endpoint
+//        endpoint = Terminal.getInstance().endpoint
         AppBackgroundingManager.get().registerListener(object : AppBackroundedListener {
             override fun onBecameForeground() {
                 Logger.trace("Caught app in foreground.")
@@ -74,7 +74,7 @@ class ProPayActivity : Activity() {
         btnKeyedsale = findViewById<View>(R.id.keyedsale) as Button
         btnCaptureTransaction = findViewById<View>(R.id.btnCapture) as Button
         btnRefRefund = findViewById<View>(R.id.refRefund) as Button
-        txtReferenceId = findViewById<View>(R.id.txtReferenceId) as EditText
+//        txtReferenceId = findViewById<View>(R.id.txtReferenceId)
         btUSBConnect = findViewById<View>(R.id.btUSBConnect) as Button
         emvAuth = findViewById<View>(R.id.emvAuth) as Button
         val cardReaderController = CardReaderController.getControllerFor(BBPOSDevice::class.java)
@@ -316,16 +316,16 @@ class ProPayActivity : Activity() {
         (endpoint as PropayEndpoint?)!!.accountNum = ""
         (endpoint as PropayEndpoint?)!!.terminalId = ""
 
-//        Terminal.getInstance().getConfiguration().setProperty("endpoint", endpoint);
-//        Terminal.getInstance().saveState();
-//        Terminal.restoreState();
-        (endpoint as PropayEndpoint?)!!.getSessionId(object : RequestListener<String> {
-            override fun onRequestComplete(response: String) {
+        Terminal.getInstance().getConfiguration().setProperty("endpoint", endpoint);
+        Terminal.getInstance().saveState();
+        Terminal.restoreState();
+        endpoint?.getSessionId(object : RequestListener<String> {
+            override fun onRequestComplete(response: String?) {
                 addText("\r\n------>Propay SessionID: $response")
                 propaySessionID = response
             }
 
-            override fun onRequestFailed(reason: MeaningfulError) {
+            override fun onRequestFailed(reason: MeaningfulError?) {
                 addText("\r\n------>Error retrieving SessionID: $reason")
             }
         })

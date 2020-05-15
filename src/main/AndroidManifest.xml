@@ -27,9 +27,9 @@
         android:largeHeap="true">
         <activity android:name=".ExternalGateway"></activity>
         <activity android:name=".PPSActivity" />
-        <activity android:name=".ProPayActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ProPayActivity"
             android:label="ProPay Sample App"
             android:screenOrientation="portrait"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen">

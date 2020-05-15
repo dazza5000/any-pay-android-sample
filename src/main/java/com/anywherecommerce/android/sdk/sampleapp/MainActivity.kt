@@ -52,7 +52,7 @@ class MainActivity : Activity() {
     var btnSubmitSignature: Button? = null
     var signatureViewLayout: LinearLayout? = null
     var signatureView: SignatureView? = null
-    override fun onCreate(savedInstanceState: Bundle) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.testharness_device)
         if (!PermissionsController.verifyAppPermissions(this)) {
